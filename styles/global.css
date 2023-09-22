@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@500&display=swap');
+
+
+
+/* 
+  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
+*/
+
+/* .icon {
+  width: 100px;
+  height: 100px;
+  background-image: url(./arrow.gif);
+  background-repeat: no-repeat;
+} */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 24, 42, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.navbar {
+  background-color: white;
+}
+
+
+.footer
+{
+  background-color: #9BA4B5;
+  margin-top: auto;
+}
+.app {
+  background-color: #F1F6F9;
+}
+/* Add additional styling as per your requirements */
+
+.ubufont{
+  font-family: 'Ubuntu', sans-serif;
+}
+.robofont{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.line_height {
+  height: 2px;
+  border-radius: 12px;
+}
+.black_btn{
+background-color: #212A3E;
+}
+.logo_text ,.head_text{
+  color: #212A3E;
+}
+.clr_2
+{
+  color: #526D82;
+}
+.clr_1
+{
+  color:#4F4557;
+}
+.minheight
+{
+  min-height: 98vh;
+}
+@media screen and (max-width: 640px) {
+  .main {
+    padding: 0;
+  }
+}
+
+/* Tailwind Styles */
+.profile_page {
+  @apply relative bg-gray-500 w-full h-full 
+}
+.app {
+  @apply relative z-10 flex justify-center items-center  flex-col w-full ;
+}
+
+.black_btn {
+  @apply rounded-full border border-black  py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+}
+
+.outline_btn {
+  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
+}
+
+.head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15]  sm:text-6xl text-4xl;
+}
+
+.bluee_gradient {
+  @apply bg-gradient-to-r from-slate-500 to-slate-300 bg-clip-text text-transparent text-transparent;
+}
+
+.green_gradient {
+  @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+}
+
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+
+.desc {
+  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+}
+
+.search_input {
+  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
+}
+
+.copy_btn {
+  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+}
+
+.glassmorphism {
+  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+}
+
+.ride_layout {
+  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
+}
+
+/* Feed Component */
+.feed {
+  @apply mt-16 mx-auto w-full max-w-xl flex justify-center items-center flex-col gap-2;
+}
+
+/* Form Component */
+.form_textarea {
+  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+.form_input {
+  @apply w-full flex  bg-white rounded-lg  p-3 text-sm text-gray-500 outline-0;
+}
+
+/* Nav Component */
+.logo_text {
+  @apply max-sm:hidden font-satoshi font-semibold text-lg  tracking-wide;
+}
+
+.dropdown {
+  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+}
+
+.dropdown_link {
+  @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
+}
+
+/* telephone input   baadme smbhal lenge*/
+
+.tele_input {
+  @apply w-[69%] rounded-lg  ml-2 mt-2 p-3 text-sm text-gray-500 outline-0
+}
+
+/* PromptCard Component */
+.ride_card {
+  @apply flex-1 break-inside-avoid rounded-lg hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 bg-white md:w-[360px] w-full h-fit;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
